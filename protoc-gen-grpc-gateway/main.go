@@ -47,7 +47,7 @@ var (
 func main() {
 	flag.Parse()
 	defer glog.Flush()
-
+        fmt.Println("We generatin")
 	if *versionFlag {
 		fmt.Printf("Version %v, commit %v, built at %v\n", version, commit, date)
 		os.Exit(0)
