@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/golang/glog"
-	examples "github.com/grpc-ecosystem/grpc-gateway/examples/internal/proto/examplepb"
+	examples "github.com/catper/grpc-gateway/examples/internal/proto/examplepb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

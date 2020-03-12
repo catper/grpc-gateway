@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/golang/protobuf/protoc-gen-go/generator"
+	"github.com/catper/protobuf/protoc-gen-go/generator"
 	"google.golang.org/genproto/protobuf/field_mask"
 )
 

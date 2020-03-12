@@ -5,8 +5,8 @@ package options
 
 import (
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
+	proto "github.com/catper/protobuf/proto"
+	descriptor "github.com/catper/protobuf/protoc-gen-go/descriptor"
 	math "math"
 )
 

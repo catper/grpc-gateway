@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes/timestamp"
-	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/grpc-ecosystem/grpc-gateway/runtime/internal/examplepb"
+	"github.com/catper/protobuf/proto"
+	"github.com/catper/protobuf/ptypes/timestamp"
+	"github.com/catper/grpc-gateway/runtime"
+	"github.com/catper/grpc-gateway/runtime/internal/examplepb"
 )
 
 var message = &examplepb.ABitOfEverything{

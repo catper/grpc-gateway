@@ -15,11 +15,11 @@ import (
 	"strings"
 
 	"github.com/golang/glog"
-	"github.com/golang/protobuf/proto"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
-	"github.com/grpc-ecosystem/grpc-gateway/internal/codegenerator"
-	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
-	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/internal/gengateway"
+	"github.com/catper/protobuf/proto"
+	plugin "github.com/catper/protobuf/protoc-gen-go/plugin"
+	"github.com/catper/grpc-gateway/internal/codegenerator"
+	"github.com/catper/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
+	"github.com/catper/grpc-gateway/protoc-gen-grpc-gateway/internal/gengateway"
 )
 
 var (

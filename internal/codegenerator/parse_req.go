@@ -5,8 +5,8 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/golang/protobuf/proto"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
+	"github.com/catper/protobuf/proto"
+	plugin "github.com/catper/protobuf/protoc-gen-go/plugin"
 )
 
 // ParseRequest parses a code generator request from a proto Message.

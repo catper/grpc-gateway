@@ -1,7 +1,7 @@
 package descriptor
 
 import (
-	"github.com/golang/protobuf/proto"
+	"github.com/catper/protobuf/proto"
 	"google.golang.org/genproto/googleapis/api/annotations"
 )
 

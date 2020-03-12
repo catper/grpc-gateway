@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	"github.com/golang/glog"
-	"github.com/golang/protobuf/proto"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
-	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
-	gen "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/generator"
+	"github.com/catper/protobuf/proto"
+	plugin "github.com/catper/protobuf/protoc-gen-go/plugin"
+	"github.com/catper/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
+	gen "github.com/catper/grpc-gateway/protoc-gen-grpc-gateway/generator"
 )
 
 var (
@@ -42,10 +42,10 @@ func New(reg *descriptor.Registry, useRequestContext bool, registerFuncSuffix, p
 		"context",
 		"io",
 		"net/http",
-		"github.com/grpc-ecosystem/grpc-gateway/runtime",
-		"github.com/grpc-ecosystem/grpc-gateway/utilities",
-		"github.com/golang/protobuf/descriptor",
-		"github.com/golang/protobuf/proto",
+		"github.com/catper/grpc-gateway/runtime",
+		"github.com/catper/grpc-gateway/utilities",
+		"github.com/catper/protobuf/descriptor",
+		"github.com/catper/protobuf/proto",
 		"google.golang.org/grpc",
 		"google.golang.org/grpc/codes",
 		"google.golang.org/grpc/grpclog",

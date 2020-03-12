@@ -39,7 +39,7 @@ def go_repositories():
     )
     go_repository(
         name = "com_github_golang_protobuf",
-        importpath = "github.com/golang/protobuf",
+        importpath = "github.com/catper/protobuf",
         sum = "h1:6nsPYzhq5kReh6QImI3k5qWzO4PEbvbIW2cwSfR/6xs=",
         version = "v1.3.2",
     )

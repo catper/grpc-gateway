@@ -3,8 +3,8 @@ package descriptor
 import (
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
+	"github.com/catper/protobuf/proto"
+	descriptor "github.com/catper/protobuf/protoc-gen-go/descriptor"
 )
 
 func TestGoPackageStandard(t *testing.T) {
@@ -21,7 +21,7 @@ func TestGoPackageStandard(t *testing.T) {
 			want: true,
 		},
 		{
-			pkg:  GoPackage{Path: "github.com/golang/protobuf/jsonpb", Name: "jsonpb"},
+			pkg:  GoPackage{Path: "github.com/catper/protobuf/jsonpb", Name: "jsonpb"},
 			want: false,
 		},
 		{
@@ -29,7 +29,7 @@ func TestGoPackageStandard(t *testing.T) {
 			want: false,
 		},
 		{
-			pkg:  GoPackage{Path: "github.com/grpc-ecosystem/grpc-gateway", Name: "main"},
+			pkg:  GoPackage{Path: "github.com/catper/grpc-gateway", Name: "main"},
 			want: false,
 		},
 		{
@@ -57,16 +57,16 @@ func TestGoPackageString(t *testing.T) {
 			want: `"encoding/json"`,
 		},
 		{
-			pkg:  GoPackage{Path: "github.com/golang/protobuf/jsonpb", Name: "jsonpb"},
-			want: `"github.com/golang/protobuf/jsonpb"`,
+			pkg:  GoPackage{Path: "github.com/catper/protobuf/jsonpb", Name: "jsonpb"},
+			want: `"github.com/catper/protobuf/jsonpb"`,
 		},
 		{
 			pkg:  GoPackage{Path: "golang.org/x/net/context", Name: "context"},
 			want: `"golang.org/x/net/context"`,
 		},
 		{
-			pkg:  GoPackage{Path: "github.com/grpc-ecosystem/grpc-gateway", Name: "main"},
-			want: `"github.com/grpc-ecosystem/grpc-gateway"`,
+			pkg:  GoPackage{Path: "github.com/catper/grpc-gateway", Name: "main"},
+			want: `"github.com/catper/grpc-gateway"`,
 		},
 		{
 			pkg:  GoPackage{Path: "github.com/google/googleapis/google/api/http.pb", Name: "http_pb", Alias: "htpb"},

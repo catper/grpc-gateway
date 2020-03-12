@@ -15,13 +15,13 @@ import (
 	"text/template"
 
 	"github.com/golang/glog"
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
-	pbdescriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	gogen "github.com/golang/protobuf/protoc-gen-go/generator"
-	structpb "github.com/golang/protobuf/ptypes/struct"
-	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
-	swagger_options "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger/options"
+	"github.com/catper/protobuf/jsonpb"
+	"github.com/catper/protobuf/proto"
+	pbdescriptor "github.com/catper/protobuf/protoc-gen-go/descriptor"
+	gogen "github.com/catper/protobuf/protoc-gen-go/generator"
+	structpb "github.com/catper/protobuf/ptypes/struct"
+	"github.com/catper/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
+	swagger_options "github.com/catper/grpc-gateway/protoc-gen-swagger/options"
 )
 
 var wktSchemas = map[string]schemaCore{

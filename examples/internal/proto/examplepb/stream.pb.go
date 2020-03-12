@@ -6,9 +6,9 @@ package examplepb
 import (
 	context "context"
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	empty "github.com/golang/protobuf/ptypes/empty"
-	sub "github.com/grpc-ecosystem/grpc-gateway/examples/internal/proto/sub"
+	proto "github.com/catper/protobuf/proto"
+	empty "github.com/catper/protobuf/ptypes/empty"
+	sub "github.com/catper/grpc-gateway/examples/internal/proto/sub"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

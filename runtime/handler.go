@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"net/textproto"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/grpc-ecosystem/grpc-gateway/internal"
+	"github.com/catper/protobuf/proto"
+	"github.com/catper/grpc-gateway/internal"
 	"google.golang.org/grpc/grpclog"
 )
 

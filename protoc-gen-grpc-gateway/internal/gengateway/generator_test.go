@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	protodescriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
+	"github.com/catper/protobuf/proto"
+	protodescriptor "github.com/catper/protobuf/protoc-gen-go/descriptor"
+	"github.com/catper/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
 )
 
 func newExampleFileDescriptor() *descriptor.File {
@@ -30,7 +30,7 @@ func newExampleFileDescriptorWithGoPkg(gp *descriptor.GoPackage) *descriptor.Fil
 		DescriptorProto: msgdesc,
 		File: &descriptor.File{
 			GoPkg: descriptor.GoPackage{
-				Path: "github.com/golang/protobuf/ptypes/empty",
+				Path: "github.com/catper/protobuf/ptypes/empty",
 				Name: "empty",
 			},
 		},
@@ -93,7 +93,7 @@ func TestGenerateServiceWithoutBindings(t *testing.T) {
 		t.Errorf("generate(%#v) failed with %v; want success", file, err)
 		return
 	}
-	if notwanted := `"github.com/golang/protobuf/ptypes/empty"`; strings.Contains(got, notwanted) {
+	if notwanted := `"github.com/catper/protobuf/ptypes/empty"`; strings.Contains(got, notwanted) {
 		t.Errorf("generate(%#v) = %s; does not want to contain %s", file, got, notwanted)
 	}
 }

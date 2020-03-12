@@ -7,14 +7,14 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	protodescriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
-	"github.com/golang/protobuf/ptypes/any"
-	structpb "github.com/golang/protobuf/ptypes/struct"
-	"github.com/grpc-ecosystem/grpc-gateway/internal/httprule"
-	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
-	swagger_options "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger/options"
+	"github.com/catper/protobuf/proto"
+	protodescriptor "github.com/catper/protobuf/protoc-gen-go/descriptor"
+	plugin "github.com/catper/protobuf/protoc-gen-go/plugin"
+	"github.com/catper/protobuf/ptypes/any"
+	structpb "github.com/catper/protobuf/ptypes/struct"
+	"github.com/catper/grpc-gateway/internal/httprule"
+	"github.com/catper/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
+	swagger_options "github.com/catper/grpc-gateway/protoc-gen-swagger/options"
 )
 
 func crossLinkFixture(f *descriptor.File) *descriptor.File {

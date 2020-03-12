@@ -4,7 +4,7 @@
 # grpc-gateway itself.
 
 GO_PLUGIN=bin/protoc-gen-go
-GO_PROTOBUF_REPO=github.com/golang/protobuf
+GO_PROTOBUF_REPO=github.com/catper/protobuf
 GO_PLUGIN_PKG=$(GO_PROTOBUF_REPO)/protoc-gen-go
 GO_PTYPES_ANY_PKG=$(GO_PROTOBUF_REPO)/ptypes/any
 SWAGGER_PLUGIN=bin/protoc-gen-swagger
@@ -50,7 +50,7 @@ RUNTIME_GO=$(RUNTIME_PROTO:.proto=.pb.go)
 OPENAPIV2_PROTO=protoc-gen-swagger/options/openapiv2.proto protoc-gen-swagger/options/annotations.proto
 OPENAPIV2_GO=$(OPENAPIV2_PROTO:.proto=.pb.go)
 
-PKGMAP=Mgoogle/protobuf/field_mask.proto=google.golang.org/genproto/protobuf/field_mask,Mgoogle/protobuf/descriptor.proto=$(GO_PLUGIN_PKG)/descriptor,Mexamples/internal/proto/sub/message.proto=github.com/grpc-ecosystem/grpc-gateway/examples/internal/proto/sub
+PKGMAP=Mgoogle/protobuf/field_mask.proto=google.golang.org/genproto/protobuf/field_mask,Mgoogle/protobuf/descriptor.proto=$(GO_PLUGIN_PKG)/descriptor,Mexamples/internal/proto/sub/message.proto=github.com/catper/grpc-gateway/examples/internal/proto/sub
 ADDITIONAL_GW_FLAGS=
 ifneq "$(GATEWAY_PLUGIN_FLAGS)" ""
 	ADDITIONAL_GW_FLAGS=,$(GATEWAY_PLUGIN_FLAGS)

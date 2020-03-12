@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/golang/glog"
-	"github.com/golang/protobuf/proto"
-	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/grpc-ecosystem/grpc-gateway/internal/httprule"
+	"github.com/catper/protobuf/proto"
+	descriptor "github.com/catper/protobuf/protoc-gen-go/descriptor"
+	"github.com/catper/grpc-gateway/internal/httprule"
 	options "google.golang.org/genproto/googleapis/api/annotations"
 )
 

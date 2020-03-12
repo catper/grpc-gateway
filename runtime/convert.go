@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/ptypes/duration"
-	"github.com/golang/protobuf/ptypes/timestamp"
-	"github.com/golang/protobuf/ptypes/wrappers"
+	"github.com/catper/protobuf/jsonpb"
+	"github.com/catper/protobuf/ptypes/duration"
+	"github.com/catper/protobuf/ptypes/timestamp"
+	"github.com/catper/protobuf/ptypes/wrappers"
 )
 
 // String just returns the given string.

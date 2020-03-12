@@ -7,7 +7,7 @@ import (
 	"net/textproto"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/catper/protobuf/proto"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"

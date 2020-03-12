@@ -5,9 +5,9 @@ package examplepb
 
 import (
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	empty "github.com/golang/protobuf/ptypes/empty"
-	timestamp "github.com/golang/protobuf/ptypes/timestamp"
+	proto "github.com/catper/protobuf/proto"
+	empty "github.com/catper/protobuf/ptypes/empty"
+	timestamp "github.com/catper/protobuf/ptypes/timestamp"
 	math "math"
 )
 

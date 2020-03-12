@@ -22,8 +22,8 @@ Example of a bash script with the `use_go_templates` flag set to true:
 ```bash
 protoc -I/usr/local/include -I. \
   -I$GOPATH/src \
-  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
-  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway \
+  -I$GOPATH/src/github.com/catper/grpc-gateway/third_party/googleapis \
+  -I$GOPATH/src/github.com/catper/grpc-gateway \
   --go_out=plugins=grpc:. \
   --grpc-gateway_out=logtostderr=true:. \
   --swagger_out=logtostderr=true,use_go_templates=true:. \
@@ -90,4 +90,4 @@ This is how the swagger file would be rendered in [Postman](https://www.getpostm
 
 ![Screenshot swaggerfile in Postman](../_imgs/gotemplates/postman.png "Postman")
 
-For a more detailed example of a protofile that has Go templates enabled, [click here](https://github.com/grpc-ecosystem/grpc-gateway/blob/master/examples/internal/proto/examplepb/use_go_template.proto "Example protofile with Go template").
+For a more detailed example of a protofile that has Go templates enabled, [click here](https://github.com/catper/grpc-gateway/blob/master/examples/internal/proto/examplepb/use_go_template.proto "Example protofile with Go template").

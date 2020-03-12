@@ -4,7 +4,7 @@ import (
 	"io"
 
 	"errors"
-	"github.com/golang/protobuf/proto"
+	"github.com/catper/protobuf/proto"
 	"io/ioutil"
 )
 

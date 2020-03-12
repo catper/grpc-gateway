@@ -6,14 +6,14 @@ package(default_visibility = ["//visibility:private"])
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    importpath = "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway",
+    importpath = "github.com/catper/grpc-gateway/protoc-gen-grpc-gateway",
     deps = [
         "//internal/codegenerator:go_default_library",
         "//protoc-gen-grpc-gateway/descriptor:go_default_library",
         "//protoc-gen-grpc-gateway/internal/gengateway:go_default_library",
         "@com_github_golang_glog//:go_default_library",
         "@com_github_golang_protobuf//proto:go_default_library",
-        "@io_bazel_rules_go//proto/wkt:compiler_plugin_go_proto",
+        "@com_github_golang_protobuf//protoc-gen-go/plugin:go_default_library",
     ],
 )
 

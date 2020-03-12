@@ -5,8 +5,8 @@ import (
 	"io"
 	"strings"
 
-	descriptor2 "github.com/golang/protobuf/descriptor"
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
+	descriptor2 "github.com/catper/protobuf/descriptor"
+	"github.com/catper/protobuf/protoc-gen-go/descriptor"
 	"google.golang.org/genproto/protobuf/field_mask"
 )
 

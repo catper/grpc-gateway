@@ -7,15 +7,15 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes/duration"
-	"github.com/golang/protobuf/ptypes/empty"
-	structpb "github.com/golang/protobuf/ptypes/struct"
-	"github.com/golang/protobuf/ptypes/timestamp"
-	"github.com/golang/protobuf/ptypes/wrappers"
-	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/grpc-ecosystem/grpc-gateway/runtime/internal/examplepb"
+	"github.com/catper/protobuf/jsonpb"
+	"github.com/catper/protobuf/proto"
+	"github.com/catper/protobuf/ptypes/duration"
+	"github.com/catper/protobuf/ptypes/empty"
+	structpb "github.com/catper/protobuf/ptypes/struct"
+	"github.com/catper/protobuf/ptypes/timestamp"
+	"github.com/catper/protobuf/ptypes/wrappers"
+	"github.com/catper/grpc-gateway/runtime"
+	"github.com/catper/grpc-gateway/runtime/internal/examplepb"
 )
 
 func TestJSONPbMarshal(t *testing.T) {
